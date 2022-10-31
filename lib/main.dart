@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/ui/home.dart';
+import 'package:flutter_application_1/pages_folder/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(Myapp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Text("welcome to my app"),
-      ),
+      home: HomePage(),
+      theme: ThemeData(primarySwatch: Colors.cyan),
+      // darkTheme: ThemeMode.dark,
+      // darkTheme: ThemeData(
+      //   brightness: Brightness.dark,
+      // ),
     );
   }
 }
